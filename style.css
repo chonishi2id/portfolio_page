@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+body {
+	background-color: #252830;
+}
+h1 {
+	font-family: trebuchet ms, sans-serif;
+	font-weight: bold;
+	font-size: 3vw;
+	color: white;
+}
+
+
+h2 {
+	font-family: trebuchet ms, sans-serif;
+	font-size: 1.5vw;
+	color: white;
+}
+
+h3 {
+	font-family:'Tahoma', sans-serif;
+	font-size: 1.3vw;
+	color: white;
+} 
+p, ul {
+	font-family: 'Tahoma', sans-serif;
+	font-size: 1.15vw;
+	color:white;
+	line-height: 1.5;
+}
+.headerNavbar {
+	background-color: #333;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:space-evenly;
+}
+
+.headerNavbar a {
+	float: left;
+	display: block;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 1vh 5vw;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.headerNavbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.headerNavbar a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+#SLIDE_BG {
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: slideBg 60s linear infinite 0s;
+	animation-timing-function: ease-in-out;
+	background-image: url('./Media/My\ project1.jpg');
+}
+
+@keyframes slideBg{
+	0% {
+		background-image: url('./Media/My\ project1.jpg');
+	}
+
+	20% {
+		background-image: url('./Media/My\ project2.jpg');
+	}
+
+	40% {
+		background-image: url('./Media/My\ project3.jpg');
+	}
+
+	60% {
+		background-image: url('./Media/My\ project4.jpg');
+	}
+
+	80% {
+		background-image: url('./Media/My\ project5.jpg');
+	}
+
+	100% {
+		background-image: url('./Media/My\ project1.jpg');
+	}
+}
+
+#welcomeText{
+	text-align: center;
+	position: absolute;
+	left: 25vw;
+	top: 50vh;
+	color: rgba(225, 225, 235, 0.869);
+}
+
+#alternateWelcome {
+	text-align: center;
+	position: absolute;
+	left: 20vw;
+	top: 60vh;
+	color: rgba(225, 225, 235, 0.869);
+}
+
+#aboutButton {
+	text-align: center;
+	position: absolute;
+	left: 43vw;
+	top: 80vh;
+	background-color: rgba(15, 92, 226, 0.428);
+	border: none;
+	color: white;
+	padding: 1vh 3.5vw;
+	text-decoration: none;
+	display: inline-block;
+	opacity: 0.4;
+	transition: 0.3s;
+	transition-property:opacity;
+	font-size: 1.25vw;
+	margin: 8px 2px;
+	cursor: pointer;
+}
+
+#aboutButton:hover {opacity: 1}
+
+#aboutContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 10%;
+}
+
+#aboutText {
+	display: inline-block;
+	text-align: justify;
+	width: 70%;
+	
+}
+
+#aboutPic {
+	width: 30%;
+	height: auto;
+}
+
+#cvDownloader {
+	text-align: center;
+	position: relative;
+	margin-top: 50px;
+	left: 12vw;
+	background-color: rgba(25, 126, 214, 0.428);
+	border: none;
+	color: white;
+	padding: 1vh 3.5vw;
+	text-decoration: none;
+	display: inline-block;
+	opacity: 0.4;
+	transition: 0.3s;
+	transition-property:opacity;
+	font-size: 1.25vw;
+	margin: 8px 2px;
+	cursor: pointer;
+}
+
+#cvDownloader:hover {opacity: 1}
+
+#educDetails {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#favClasses {
+	align-self: flex-start;
+	margin-left: 5px;
+	flex-grow:4;
+}
+
+#sigClasses {
+	align-self: flex-start;
+	margin-left: 5vw;
+	flex-grow: 4;
+}
+
+#gownpic {
+	width: 30%;
+	height: auto;
+}
+
+#bujoStudioImg {
+	width: 35%;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#shodanAikido {
+	width: 35%;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#yuhihai {
+	display: flex;
+	justify-content: space-evely;
+	align-items: flex-start;
+}
+
+#yuhihaiVictory {
+	width: 35%;
+	height: auto;
+	float: left;
+	margin-left: 10px;
+	margin-right: 50px;
+}
+
+#iaidoBadass {
+width: 27%;
+	height: auto;
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#icons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+	margin: auto;
+	width: 75%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 10vw;
+	padding-bottom: 10vh;
+}
+
+.row2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 10vw;
+}
+
+.iconImg {
+	float: left;
+	width: 10vw;
+	object-fit: cover;
+	border: 3px solid black;
+	border-radius:60px;
+	opacity:0.75;
+	transition: 0.3s;
+	background-color: white;
+}
+
+.iconImg:hover {
+	opacity: 1;
+}
