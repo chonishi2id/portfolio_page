@@ -9,17 +9,17 @@
     <link href="icon.svg" rel="icon"/>
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div class="headerNavbar">
-                <a class="active" href="#top">Top</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-								<a href="#achievements">Achievements</a>
-								<a href="#contact">Contact</a>
+                <a class="active" href="#top">トップ</a>
+                <a href="#about">アバウト</a>
+                <a href="#education">学歴</a>
+                <a href="#projects">プロジェクト</a>
+				<a href="#achievements">Achievements</a>
+				<a href="#contact">連絡</a>
 								<!--Have a language option later-->
         </div>
     </header>
@@ -27,41 +27,40 @@
         <section id="top">
 					<!--Add a slideshow of images-->					
 					<div id="SLIDE_BG"></div>
-					<h1 id="welcomeText">Welcome! My name is <strong>Timothy Daisuke Chon</strong>.</h1><br>
-					<button id="aboutButton" onclick="window.location.href='#about'">About</button>
+					<h1 id="welcomeText">いらっしゃませ！<strong>西岡ティモシー大輔</strong>と申します.</h1><br>
+					<button id="aboutButton" onclick="window.location.href='#about'">アバウトへ</button>
 
 				</section>
         <!--Section lacks header to display-->
 				<hr>
         <section id="about"> 
-					<h1>Who am I?</h1> <!--Perhaps unnecessary-->
+					<h1>アバウト</h1> <!--Perhaps unnecessary-->
 				<!--Add picture/picture gallery on left side-->
 					<div id="aboutContent">
 						<img id="aboutPic" src="./Media/23UCSD-15388691-4-1008311546-1.jpg" alt="me in a suit" >
 						<div id="aboutRight">
-							<h2 id="aboutText">Good day! I am a 23 year old Japanese-Korean American that grew up in Tokyo. I have a great passion for technology and resource management, so much so, that in fact, I got
-								 a double bachelors from the University of California, San Diego in Economics and Computer Science. Along with these passions, traditional martial arts has always had a huge influence
-								 on my life and I work everyday to get closer to the master I dream of becoming. I currently work as an OPFOR role player but I am confident that you will find a reason to recruit my
+							<h2 id="aboutText">こんにちは! 私は東京出身の23歳。
+                                技術と経済が好きでUniversity of California, San Diegoのコンピューターサイエンス学部と経済学部同時に入学し、無事卒業しました。
+                                その二つのパッションの上に私の日常には武道が大事で毎日少しずつ腕を磨くために努力をしています。
+								今はOPFORとして働いていますが私の広くて深いskillset <!--Translate this-->をレクルートするのをI am confident<!--Translate this-->
 								vast skill set.</h2><br> <!--Impactfully large and to the point. Don't forget to add link to education-->
-							<a href="Media/ResumeMar2023.pdf" download="Timothy Daisuke Chon">
-								<button id="cvDownloader">Download CV</button> <!--Look up download links later-->
-							</a>
-						</div>
+							<button id="cvDownloader" onclick="">履歴書をダウンロード</button> <!--Look up download links later-->
+							</div>
 					</div>
 				</section>
 				<hr>
 				<section id="education">
-					<h1>Education</h1>
-					<!--Remember to find a good one for this <img src="" alt="me with my degrees">-->
-					<h2>University of California, San Diego - Economics B.A. </h2>
-						<ul><li>Major Upper Division GPA: 3.501</li>
-									<li>Awarded: December 2022</li>
+					<h1>学歴</h1>
+					<img src="" alt="me with my degrees">
+					<h2>University of California, San Diego - 経済 B.A. </h2>
+						<ul><li>メジャー GPA: 3.501</li>
+									<li>受賞日: 2022年12月</li>
 								</ul>
-					<h2>University of California, San Diego - Computer Science and Engineering B.S.</h2>
-						<ul><li>Major Upper Division GPA: 3.313</li>
-									<li>Awarded: December 2022</li>
+					<h2>University of California, San Diego - コンピューターサイエンスアンドエンジニアリング B.S.</h2>
+						<ul><li>メジャー GPA: 3.313</li>
+									<li>受賞日: 2022年12月</li>
 								</ul>
-					<h2>Overall GPA: 3.328</h2>
+					<h2>Overall GPA: 3.328</h2><!--Figure out how to translate this-->
 					<div id = "educDetails">
 						<ul id="favClasses"><h2>List of favorite classes:</h2>
 							<li>Microeconomics A, B, C</li>
@@ -108,21 +107,20 @@
 				</section>
 				<hr>
 				<section id="projects">
-					<h1>Projects</h1>
+					<h1>プロジェクト</h1>
 					<img id="bujoStudioImg" src="Media/homepage.png">
 					<h2>Bujo Studio</h2>
-					<p>For my software engineering course, I was tasked to work with a group of other students to develop a bullet journal web application in a quarter.
-						I was appointed to be the leader of a group of eight students and used Agile development techniques in order to complete the project.
-						We were a smaller group than the norm, some members had personal emergencies come up that prevented them from working, and I (as well as a few other members) had no experience in web app development at the time so naturally, the instruction staff did not expect us to submit a relatively finished product.
-						However, we made many sacrifices, learned web app development on the fly, and ultimately prevailed to release a working version. We all received an A for our work.
-						For this project, while I oversaw the overall development of the app, I focused my efforts into developing the front end workings of the app as my team had several members who had experience with backend development.
-						I also put in the majority of the work in connecting data entered into the front-end to be stored in the backend so it could be accessed again.
+					<p>ソフトウェアエンジニアリングの授業で他の学生とグループを組んでジャーナリングアプリを三か月で制作<!--?-->する指示を受けました。
+						私は八人の生徒のグループのリーダーとして決められ、<!--Figure out what Agile is called in Japan--> used Agile development techniques を使ってこのプロジェクトを完成しました。
+						すでに平均より小さいグループでしたが、その上にメンバーが働けなくなってしまった事情や、当時の私と他のメンバーのウェブアプリ創作の経験不足があり、the instruction staff did not expect us to submit a relatively finished product.
+						だがしかし、私たちの頑張りでウェブアプリ創作を早く学び、働けなくなったメンバーを徹夜してでもカバーしたりと、最終的に完成品を出す事が出来ました。そのおかげで私たち全員Aを貰いました。
+                        このプロジェクトでは私はこのアプリの全創作に手を入れてましたが、主に手を入れた場面はアプリのフロントエンドとフロントエンドで入力したデータをバックエンドに繋げる所でした。その理由はグループの中にすでにバックエンドに経験がある生徒がすでに何人か居ました。
 					</p>
 					<h3><a href="https://github.com/cse110-sp21-group9/cse110-sp21-group9">Check out the project here</a></h3>
 					<h2>3BC Processor</h2>
-					<p>For my computer architecture course, I worked with two other students to develop a custom processor that specialized in certain error correction tasks from scratch.
-						The program was supposed to be able to perform a Hamming encoding with additional credit given to performing a SECDED decoding as well as pattern matching capabilities, all while under constraints outlined in the documentation.
-						We designed the Instruction Set, created an ALU model in Verilog, and had the processor perform the tasks using the appropriate assembly code structured to the Instruction Set. The project performed the first task without issue but the others still had some bugs in it when we submitted it.
+					<p>コンピューターアーキテクチャ授業の依頼で他の生徒二人とエラーコレクション<!--Figure out how to say "specialized" in japanese"-->カスタムプロセッサーを一から創作しました。
+						このプロセッサーはハミングエンコーディング、SECDEDデコーディング、パターンマッチングを下の<!--"constraint"-->の中で出来るように依頼されてました。
+						私たちはISAから、VerilogでのALUモデル、そしてプロセッサーに対応するアセンブリー言語を作りました。私たちのプロセッサーは一つ目のタスクを問題なしでできましたが他のタスクにバグがあったため、B+を貰いました。
 						We received a B+ for our efforts.
 					</p>
 					<h3><a href="https://github.com/ecstaticstupidity/CSE-141L-Project">Check out the project here</a></h3>
@@ -132,7 +130,7 @@
 						I was given the green light for this project and found that just like the American beer industry, competition is done in advertisement rather than prices, alcohol content, or other types of branding that I observed in my data collection.
 						I received an A for my work.
 					</p>
-					<h3><a href="Media/ECON_105_Empirical_Assignment.pdf" download="Beer Analysis">Download the paper here</a></h3>
+					<h3><a href="Media/ECON_105_Empirical_Assignment.pdf">Download the paper here</a></h3>
 					<h2>First Annual UCSD Kendo Club Tournament</h2>
 					<p>As president of the UCSD Kendo Club, my main goal during my term was to secure a strong renewal to the club's vitality following a severe stagnation in membership, functions, and participation from the COVID pandemic.
 						Me and my management board that I had appointed agreed that one of the main pillars of achieving this goal was to organize the club's first tournament in its 25 year history. We communicated with UCSD administration to get permission to host the event,
@@ -152,9 +150,9 @@
 						consistent and constant practice.
 					</p>
 					<img id="shodanAikido" src="Media/aikidoShodan.jpg">
-					<h2>All-Japan Aikido Federation - 1st Degree Black Belt</h2>
+					<h2>全日本合気道会 - 初段</h2>
 						<ul>
-							<li>Awarded: April 2018</li>
+							<li>受賞日: 2018年4月</li>
 						</ul>
 					<h2>Southern California Kendo Federation - 3rd Kyu Rank</h2>
 						<ul><li>Awarded: April 2022</li></ul>
@@ -221,32 +219,23 @@
 						<div class="row">
 							<a href="https://www.linkedin.com/in/nishi-daisuke2000/"><img class="iconImg" src="./Media/linkedin.png" alt="LinkedIn"></a>
 							<a href="https://github.com/ecstaticstupidity"><img class="iconImg" src="./Media/github.png" alt="Github"></a>
-							<div class="tooltip">
-								<img class="iconImg" id="emailIcon" src="./Media/gmail.png" alt="Email" onclick="emailCopy()" onmouseout="emailOut()"><!--On click, show email address-->
-									<span class="tooltiptext" id="emailToolTip">Copy tchon@ucsd.edu to clipboard</span>
-							</div>
+							<a href=""><img class="iconImg" src="./Media/gmail.png" alt="Email"></a><!--On click, show email address-->
 						</div>
 						<div class="row2">
-							<div class="tooltip">
-								<img class="iconImg" src="./Media/phone.png" alt="Call me" onmouseout="phoneOut()"><!--On click, show phone number and make it clickable to call-->
-									<span class="tooltiptext" id="phoneToolTip">+1-858-752-2709</span>
-							</div>
-							<a href="Media/ResumeMar2023.pdf" download="Timothy Daisuke Chon"><img class="iconImg" src="./Media/cv.png" alt="Download CV"></a><!--On click download cv-->
+							<a href=""><img class="iconImg" src="./Media/phone.png" alt="Call me"></a><!--On click, show phone number and make it clickable to call-->
+							<a href="Media/ResumeMar2023.pdf"><img class="iconImg" src="./Media/cv.png" alt="Download CV"></a><!--On click download cv-->
 						</div>
 					</div>
         </section>
     </main>
 		<footer>
 			<!--Hide this as some super secret thing-->
-			<details>
-				<summary>Super Secret Button</summary>
-				<p>This website was entirely developed by myself. Credit to:</p>
-				<ul>
-					<li>W3Schools for tutorials on transitions and tooltips</li>
-					<li>Bootstrap for</li>
-					<li>Cai Rahman, Timothy Liao, Gavin Zau for photos</li>
-				</ul>
-			</details>
+			<p>This website was entirely developed by myself. Credit to:</p>
+			<ul>
+				<li>W3Schools for tutorials on transitions</li>
+				<li>Bootstrap for</li>
+				<li>Cai Rahman, Timothy Liao, Gavin Zau for photos</li>
+			</ul>
     </footer>
 </body>
 </html>
