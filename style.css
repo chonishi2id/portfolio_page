@@ -78,23 +78,20 @@ details {
 	0% {
 		background-image: url('./Media/My\ project1.jpg');
 	}
-	/* Find a different image - this is the one with me holding on the sig. 
+	/* Find a different image - this is the one with me holding on the sig. */
 	20% {
-		background-image: url('./Media/My\ project2.jpg');
+		background-image: url('./Media/My\ project6.jpg');
 	} 
 	
-	40%
-	*/
-
-	25% {
+	40% {
 		background-image: url('./Media/My\ project3.jpg');
 	}
 
-	50% {
+	60% {
 		background-image: url('./Media/My\ project4.jpg');
 	}
 
-	75% {
+	80% {
 		background-image: url('./Media/My\ project5.jpg');
 	}
 

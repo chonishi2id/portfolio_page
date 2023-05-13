@@ -1,4 +1,20 @@
-# Personal Website Project Version 1.0
+# Personal Website Project Version 1.2
+## Version 1.1.1 May 13, 2023
+## Completed Ideas
+* Draft of Japanese Language Page Completed but not coupled with main page yet
+
+## Patches Implemented
+* Reworded About introduction
+* Added new images to intro slideshow
+
+## To do:
+* Navbar modification - less generic, make it sticky, scroll down on click rather than instant teleportation
+* Add in skills - maybe under achievements?
+* Add in work experience - maybe under education?
+* Add in UCSD Kendo Tournament pictures under projects - maybe a small slideshow?
+* Custom url and maybe change up metadata. Find a site icon?
+* Connect EN and JP pages through something. A navbar tab?
+
 ## Version 1.1 May 8, 2023
 ## Completed Ideas
 * Working navbar
