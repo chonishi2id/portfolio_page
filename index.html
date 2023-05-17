@@ -7,22 +7,44 @@
     <meta name="author" content="Timothy Daisuke Nishioka Chon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="icon.svg" rel="icon"/>
-    <link href="style.css" rel="stylesheet"/>
-    <script src="script.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="style.css" rel="stylesheet"/>
+	<script src="script.js"></script>
+
 </head>
-<body>
-    <header>
-        <div class="headerNavbar">
-                <a class="active" href="#top">Top</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-				<a href="#achievements">Achievements</a>
-				<a href="#contact">Contact</a>
-				<!--Have a language option later-->
-        </div>
-    </header>
+<body data-spy="scroll" data-target="#mainNav">
+	<nav id="mainNav" class="nav navbar-expand-md navbar-dark fixed-top bg-dark">
+		<!-- Container wrapper -->
+		  <div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#top">Top <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#about">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#education">Education</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#projects">Projects</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#achievements">Achievements</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			  </li>
+			</ul>
+			<form class="form-inline mt-2 mt-md-0">
+			  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		  </div>
+	  </nav>
     <main>
         <section id="top">
 					<!--Add a slideshow of images-->					
@@ -32,7 +54,6 @@
 
 				</section>
         <!--Section lacks header to display-->
-				<hr>
         <section id="about"> 
 					<h1>Who am I?</h1> <!--Perhaps unnecessary-->
 				<!--Add picture/picture gallery on left side-->
@@ -43,14 +64,14 @@
 								 a double bachelors from the University of California, San Diego in Economics and Computer Science. However, the most important thing to know about me is that I value growth above anything else.
 								 It's why I constantly practice martial arts to create that growth in myself, and it's what I bring to any organization I become a part of. I am confident that you will find use for my drive and work ethic.
 								 When that happens, I will not try, I will contribute to creating growth in your organization.</h2><br> <!--Impactfully large and to the point. Don't forget to add link to education-->
-							<a href="Media/ResumeMar2023.pdf" download="Timothy Daisuke Chon">
+							<a href="Media/ResumeMay2023.pdf" download="Timothy Daisuke Chon">
 								<button id="cvDownloader">Download CV</button> <!--Look up download links later-->
 							</a>
 						</div>
 					</div>
 				</section>
-				<hr>
 				<section id="education">
+					<hr class="divider">
 					<h1>Education</h1>
 					<!--Remember to find a good one for this <img src="" alt="me with my degrees">-->
 					<h2>University of California, San Diego - Economics B.A. </h2>
@@ -106,10 +127,10 @@
 						<img id="gownpic" src="./Media/23UCSD-15388691-22-1008311448-1.jpg" alt = "me in a gown" width="600px">
 					</div>
 				</section>
-				<hr>
+				<hr class="divider">
 				<section id="projects">
 					<h1>Projects</h1>
-					<img id="bujoStudioImg" src="Media/homepage.png">
+					<img id="bujoStudioImg" alt="Bujo Studio Home" src="Media/homepage.png">
 					<h2>Bujo Studio</h2>
 					<p>For my software engineering course, I was tasked to work with a group of other students to develop a bullet journal web application in a quarter.
 						I was appointed to be the leader of a group of eight students and used Agile development techniques in order to complete the project.
@@ -138,10 +159,10 @@
 						Me and my management board that I had appointed agreed that one of the main pillars of achieving this goal was to organize the club's first tournament in its 25 year history. We communicated with UCSD administration to get permission to host the event,
 						invited instructors all over San Diego to judge, and rallied UCSD Kendo Club members to participate, among a giant list of other things to provide an overall successful tournament experience.
 						Of course, since this was the first tournament the club had ever organized, there were a few mishaps along the way so we later got together to write up a list of guidelines on what worked and what didn't. To this day, the UCSD Kendo Club hosts this tournament annually
-						every fall with each year improving on the last. To this day, it is one of the projects I am most proud of contributing to.
+						every fall with each year improving on the last.
 					</p>
 				</section>
-				<hr>
+				<hr class="divider">
 				<section id="achievements">
 					<h1>Achievements</h1>
 					<h2>Martial Arts</h2>
@@ -151,7 +172,7 @@
 						Though the achievements I have gained are nice reminders of my growth, I value far more the discipline, perseverance, and drive I have built from
 						consistent and constant practice.
 					</p>
-					<img id="shodanAikido" src="Media/aikidoShodan.jpg">
+					<img id="shodanAikido" alt="Shodan Award Celebration" src="Media/aikidoShodan.jpg">
 					<h2>All-Japan Aikido Federation - 1st Degree Black Belt</h2>
 						<ul>
 							<li>Awarded: April 2018</li>
@@ -169,7 +190,7 @@
 							<li>This is an annual Kendo tournament that the San Diego Kendo-Bu Dojo holds for all its members in memory of the late John K. Yamamoto Sensei.</li>
 							<li>Awarded: March 2022</li>
 						</ul>
-						<img id="yuhihaiVictory" src="Media/PXL_20220502_011726925.MP.jpg">
+						<img id="yuhihaiVictory" alt="Victory after Yuhihai" src="Media/PXL_20220502_011726925.MP.jpg">
 					<h2>2022 UCLA Yuhihai Tournament - 2nd Place Kyu Teams Division</h2>
 						<ul>
 							<li>This is a prestigious Kendo tournament that UCLA hosts annually for all Kendo practictitioners in the UC schools to compete in.</li>
@@ -190,7 +211,7 @@
 									<li>Organized several team-building events and socials to build a tightly knit community</li>
 									<li>Worked with martial arts supply vendors to supply members with the necessary practice equipment at lower costs in order to reduce barriers of entry</li>
 									<li>Designed and sold club merchandise such as jackets and t-shirts to build a sense of unity within the club</li>
-									<img id="iaidoBadass" src="Media/IMG_20211018_022458_069.jpg">
+									<img id="iaidoBadass" alt="Iaido Pose" src="Media/IMG_20211018_022458_069.jpg">
 									<li>Organized fund raisers to subsidize tournament participation fees in order to further reduce said barriers of entries for members.</li>
 									<li>Extensively mentored many fellow students in not only the martial art but also in schoolwork and life in general.</li>
 								</ul>
@@ -213,7 +234,7 @@
 							<li>Term: June 2020 - June 2022</li>
 						</ul>
 				</section>
-				<hr>
+				<hr class="divider">
         <section id="contact">
 					<h1>Contact Me</h1>
 					<!--These should be icons-->
@@ -221,17 +242,17 @@
 						<div class="row">
 							<a href="https://www.linkedin.com/in/nishi-daisuke2000/"><img class="iconImg" src="./Media/linkedin.png" alt="LinkedIn"></a>
 							<a href="https://github.com/ecstaticstupidity"><img class="iconImg" src="./Media/github.png" alt="Github"></a>
-							<div class="tooltip">
+							<div id="tooltipEmail">
 								<img class="iconImg" id="emailIcon" src="./Media/gmail.png" alt="Email" onclick="emailCopy()" onmouseout="emailOut()"><!--On click, show email address-->
-									<span class="tooltiptext" id="emailToolTip" lang="en">Copy tchon@ucsd.edu to clipboard</span>
+									<span id="emailToolTip" lang="en">Copy tchon@ucsd.edu to clipboard</span>
 							</div>
 						</div>
 						<div class="row2">
-							<div class="tooltip">
+							<div id="tooltipPhone">
 								<img class="iconImg" src="./Media/phone.png" alt="Call me" onmouseout="phoneOut()"><!--On click, show phone number and make it clickable to call-->
-									<span class="tooltiptext" id="phoneToolTip">+1-858-752-2709</span>
+									<span id="phoneToolTip">+1-858-752-2709</span>
 							</div>
-							<a href="Media/ResumeMar2023.pdf" download="Timothy Daisuke Chon"><img class="iconImg" src="./Media/cv.png" alt="Download CV"></a><!--On click download cv-->
+							<a href="Media/ResumeMay2023.pdf" download="Timothy Daisuke Chon"><img class="iconImg" src="./Media/cv.png" alt="Download CV"></a><!--On click download cv-->
 						</div>
 					</div>
         </section>
@@ -243,8 +264,9 @@
 				<p>This website was entirely developed by myself. Credit to:</p>
 				<ul>
 					<li>W3Schools for tutorials on transitions and tooltips</li>
-					<li>Bootstrap for</li>
+					<li>Bootstrap for the navbar</li>
 					<li>Cai Rahman, Timothy Liao, Gavin Zau for photos</li>
+					<li><a href="https://www.freepik.com/free-vector/background-luxury-minimalist-gradient-style-design_32582886.htm#query=website%20background%20dark&position=17&from_view=search&track=ais">Background Image by arrandera</a> on Freepik</li>
 				</ul>
 			</details>
     </footer>
