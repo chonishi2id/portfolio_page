@@ -1,301 +1,252 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Timothy Daisuke Nishioka Chon</title>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Timothy Daisuke Chon</title>
     <meta name="description" content="This is my personal page"/>
     <meta name="author" content="Timothy Daisuke Nishioka Chon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="icon.svg" rel="icon"/>
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.20.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.20.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  </head>
-  <body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
     <header>
-      <div class="headerNavbar">
-              <a class="active" href="#top">Top</a>
-              <a href="#about">About</a>
-              <a href="#education">Education</a>
-              <a href="#projects">Projects</a>
-              <a href="#achievements">Achievements</a>
-              <a href="#contact">Contact</a>
-              <!--Have a language option later-->
-      </div>
-  </header>
-  <main>
-      <section id="top">
-
-        <!--Add a slideshow of images-->					
-        <div id="SLIDE_BG"></div>
-        <h1 id="welcomeText">Welcome! My name is <strong>Timothy Chon</strong>.</h1><br>
-        <h1 id="alternateWelcome">You may also know me as <strong>Daisuke Nishioka</strong> </h1> <!--Make sure its centered at lower edge of screen-->
-        <button id="aboutButton" onclick="window.location.href='#about'">About</button>
-
-      </section>
-      <!--Section lacks header to display-->
-      <hr>
-      <section id="about"> 
-        <h1>Who am I?</h1> <!--Perhaps unnecessary-->
-      <!--Add picture/picture gallery on left side-->
-        <div id="aboutContent">
-          <img id="aboutPic" src="./Media/23UCSD-15388691-4-1008311546-1.jpg" alt="me in a suit" >
-          <div id="aboutRight">
-            <h2 id="aboutText">Good day! I am a 23 year old Japanese-Korean American that grew up in Tokyo. I have a great passion for technology and resource management, so much so, that in fact, I got
-               a double bachelors from the University of California, San Diego in Economics and Computer Science. Along with these passions, traditional martial arts has always had a huge influence
-               on my life and I work everyday to get closer to the master I dream of becoming. I currently work as an OPFOR role player but I am confident that you will find a reason to recruit my
-              vast skill set.</h2><br> <!--Impactfully large and to the point. Don't forget to add link to education-->
-            <button id="cvDownloader" onclick="">Download CV</button> <!--Look up download links later-->
-            </div>
+        <div class="headerNavbar">
+                <a class="active" href="#top">Top</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+				<a href="#achievements">Achievements</a>
+				<a href="#contact">Contact</a>
+				<!--Have a language option later-->
         </div>
-      </section>
-      <hr>
-      <section id="education">
-        <h1>Education</h1>
-        <img src="" alt="me with my degrees">
-        <h2>University of California, San Diego - Economics B.A. </h2>
-          <ul><li>Major Upper Division GPA: 3.501</li>
-                <li>Awarded: December 2022</li>
-              </ul>
-        <h2>University of California, San Diego - Computer Science and Engineering B.S.</h2>
-          <ul><li>Major Upper Division GPA: 3.313</li>
-                <li>Awarded: December 2022</li>
-              </ul>
-        <h2>Overall GPA: 3.328</h2>
-        <div id = "educDetails">
-          <ul id="favClasses"><h2>List of favorite classes:</h2>
-            <li>Microeconomics A, B, C</li>
-            <li>Macroeconomics A, B</li>
-            <li>Econometrics A, C</li>
-            <li>Decisions Under Uncertainty</li>
-            <li>Game Theory</li>
-            <li>Industrial Organization</li>
-            <li>Advanced Data Structures</li>
-            <li>Algorithm Design and Analysis</li>
-            <li>Software Engineering</li>
-            <li>Principles of Computer Operating Systems</li>
-            <li>Intro to Computer Security</li>
-            <li>AI: Search and Reasoning</li>
-            <li>Intro to Modern Cryptography</li>
-          </ul>
-          <ul id="sigClasses"><h2>List of significant classes taken:</h2>
-            <li>Engineering Calculus A, B, C</li>
-            <li>Discrete Mathematics</li>
-            <li>Linear Algebra</li>
-            <li>Microeconomics A, B, C</li>
-            <li>Macroeconomics A, B</li>
-            <li>Econometrics A, B, C</li>
-            <li>Decisions Under Uncertainty</li>
-            <li>Game Theory</li>
-            <li>Industrial Organization</li>
-            <li>Advanced Data Structures</li>
-            <li>Theory of Computation</li>
-            <li>Algorithm Design and Analysis</li>
-            <li>Software Engineering</li>
-            <li>Web Client Languages</li>
-            <li>Intro to Computer Architecture</li>
-            <li>Principles of Computer Operating Systems</li>
-            <li>Programming Languages: Principles and Paradigms</li>
-            <li>Intro to Computer Security</li>
-            <li>Interaction Design</li>
-            <li>AI: Search and Reasoning</li>
-            <li>Intro to Modern Cryptography</li>
-            <li>Recommender Systems and Web Mining</li>
-          </ul>
-          
-          <img id="gownpic" src="./Media/23UCSD-15388691-22-1008311448-1.jpg" alt = "me in a gown" width="600px">
-        </div>
-      </section>
-      <hr>
-      <section id="projects">
-        <h1>Projects</h1>
-        <img id="bujoStudioImg" src="Media/homepage.png">
-        <h2>Bujo Studio</h2>
-        <p>For my software engineering course, I was tasked to work with a group of other students to develop a bullet journal web application in a quarter.
-          I was appointed to be the leader of a group of eight students and used Agile development techniques in order to complete the project.
-          We were a smaller group than the norm, some members had personal emergencies come up that prevented them from working, and I (as well as a few other members) had no experience in web app development at the time so naturally, the instruction staff did not expect us to submit a relatively finished product.
-          However, we made many sacrifices, learned web app development on the fly, and ultimately prevailed to release a working version. We all received an A for our work.
-          For this project, while I oversaw the overall development of the app, I focused my efforts into developing the front end workings of the app as my team had several members who had experience with backend development.
-          I also put in the majority of the work in connecting data entered into the front-end to be stored in the backend so it could be accessed again.
-        </p>
-        <h3><a href="https://github.com/cse110-sp21-group9/cse110-sp21-group9">Check out the project here</a></h3>
-        <h2>3BC Processor</h2>
-        <p>For my computer architecture course, I worked with two other students to develop a custom processor that specialized in certain error correction tasks from scratch.
-          The program was supposed to be able to perform a Hamming encoding with additional credit given to performing a SECDED decoding as well as pattern matching capabilities, all while under constraints outlined in the documentation.
-          We designed the Instruction Set, created an ALU model in Verilog, and had the processor perform the tasks using the appropriate assembly code structured to the Instruction Set. The project performed the first task without issue but the others still had some bugs in it when we submitted it.
-          We received a B+ for our efforts.
-        </p>
-        <h3><a href="https://github.com/ecstaticstupidity/CSE-141L-Project">Check out the project here</a></h3>
-        <h2>Japanese beer analysis</h2>
-        <p>For my Industrial Organization course, I was tasked to conduct an exploration based on a dataset of beer and apply concepts learned in the class to speculate on how competition is present in the industry.
-          Since I was living in Japan at the time due to the Coronavirus pandemic, I asked Dr. Emannuel Vespa, the lead instructor if I could use data I collected from my local supermarket to conduct the exploration and see if I can find the same phenomena he described seeing in the American beer market.
-          I was given the green light for this project and found that just like the American beer industry, competition is done in advertisement rather than prices, alcohol content, or other types of branding that I observed in my data collection.
-          I received an A for my work.
-        </p>
-        <h3><a href="">Download the paper here</a></h3>
-        <h2>First Annual UCSD Kendo Club Tournament</h2>
-        <p>As president of the UCSD Kendo Club, my main goal during my term was to secure a strong renewal to the club's vitality following a severe stagnation in membership, functions, and participation from the COVID pandemic.
-          Me and my management board that I had appointed agreed that one of the main pillars of achieving this goal was to organize the club's first tournament in its 25 year history. We communicated with UCSD administration to get permission to host the event,
-          invited instructors all over San Diego to judge, and rallied UCSD Kendo Club members to participate, among a giant list of other things to provide an overall successful tournament experience.
-          Of course, since this was the first tournament the club had ever organized, there were a few mishaps along the way so we later got together to write up a list of guidelines on what worked and what didn't. To this day, the UCSD Kendo Club hosts this tournament annually
-          every fall with each year improving on the last. To this day, it is one of the projects I am most proud of contributing to.
-        </p>
-      </section>
-      <hr>
-      <section id="achievements">
-        <h1>Achievements</h1>
-        <h2>Martial Arts</h2>
-        <p>Traditional Japanese Martial Arts has been, and will continue to be core to my development and identity.
-          From getting thrown around on the mats in my childhood, to helping my Sensei teach Aikido in my adolescence,
-          all the way to leading the Kendo and Iaido Clubs at UC San Diego, I have always made time to develop as a martial artist and as a person.
-          Though the achievements I have gained are nice reminders of my growth, I value far more the discipline, perseverance, and drive I have built from
-          consistent and constant practice.
-        </p>
-        <img id="shodanAikido" src="Media/aikidoShodan.jpg">
-        <h2>All-Japan Aikido Federation - 1st Degree Black Belt</h2>
-          <ul>
-            <li>Awarded: April 2018</li>
-          </ul>
-        <h2>Southern California Kendo Federation - 3rd Kyu Rank</h2>
-          <ul><li>Awarded: April 2022</li></ul>
-        <h2>Mazuru Kai Iaido Dojo - 5th Kyu Rank</h2>
-          <ul><li>Awarded: May 2022</li></ul>
-        <h2>2021 UCSD Kendo Tournament - 1st Place Advanced Division</h2>
-          <ul><li>My team organized the UCSD Kendo Club's first Kendo tournament in its 25 year history. We had a pretty good showing of 30 or so members and I ended up winning.</li>
-              <li>Awarded: November 2021</li>
-          </ul>
-        <h2>2022 San Diego Kendo-Bu Tournament - 2nd Place Yamamoto Cup</h2>
-          <ul>
-            <li>This is an annual Kendo tournament that the San Diego Kendo-Bu Dojo holds for all its members in memory of the late John K. Yamamoto Sensei.</li>
-            <li>Awarded: March 2022</li>
-          </ul>
-          <img id="yuhihaiVictory" src="Media/PXL_20220502_011726925.MP.jpg">
-        <h2>2022 UCLA Yuhihai Tournament - 2nd Place Kyu Teams Division</h2>
-          <ul>
-            <li>This is a prestigious Kendo tournament that UCLA hosts annually for all Kendo practictitioners in the UC schools to compete in.</li>
-            <li>Awarded: April 2022</li>
-        </ul>
-        <h2>UCSD Kendo Club President</h2>
-          <ul>
-            <li>Founded in 1998 by UCSD alumni and San Diego Kendo-Bu Dojo instructors, this club works to organize regular practices and introduce the students of UCSD to the popular Japanese martial art of Kendo. 
-              Kendo is a centuries old Japanese sword-based martial art practiced by millions of people from children to the elderly.
-            </li>
-            <li>Progressed from Secretary to Vice President to President over the four years I spent as a member of the club.</li>
-            <li>With a management board of 10 other members, we: 
-              <ul>
-                <li>Expanded the club from 15 regular members to 80 following a severe stagnation from the COVID pandemic</li>
-                <li>Taught proper etiquette when practicing in a dojo environment as well as lead warmups so members could practice without injuring themselves</li>
-                <li>Organized the club's first tournament in its 30 year history</li>
-                <li>Worked with other orgs on UCSD to organize demonstrations of Kendo and our club.</li>
-                <li>Organized several team-building events and socials to build a tightly knit community</li>
-                <li>Worked with martial arts supply vendors to supply members with the necessary practice equipment at lower costs in order to reduce barriers of entry</li>
-                <li>Designed and sold club merchandise such as jackets and t-shirts to build a sense of unity within the club</li>
-                <img id="iaidoBadass" src="Media/IMG_20211018_022458_069.jpg">
-                <li>Organized fund raisers to subsidize tournament participation fees in order to further reduce said barriers of entries for members.</li>
-                <li>Extensively mentored many fellow students in not only the martial art but also in schoolwork and life in general.</li>
-              </ul>
-            </li>
-            <li>Term: June 2021 - June 2022</li>
-          </ul>
-        <h2>UCSD Iaido Club President</h2>
-          <ul>
-            <li>Lesser widespread than Kendo, Iaido is also a centuries-old Japanese sword art. Compared to Kendo, an emphasis is placed on 
-              constant repetition of certain drills as well as draws from the sheath.
-            </li>
-            <li>Starting as the only manager and member of the club, I:
-              <ul>
-                <li>Expanded the club from just myself to 15 regular members. The club was on the verge of completely disappearing following the COVID pandemic.</li>
-                <li>Recruited 3 members to found a managerial board</li>
-                <li>Organized fund raisers to subsidize practice equipment costs for new members.</li>
-                <li>Created guidelines of best management practices that I learned from leading the larger Kendo club.</li>
-              </ul>
-            </li>
-            <li>Term: June 2020 - June 2022</li>
-          </ul>
-      </section>
-      <hr>
-      <section id="contact">
-        <h1>Contact Me</h1>
-        <!--These should be icons-->
-        <div id="icons">
-          <div class="row">
-            <a href="https://www.linkedin.com/in/nishi-daisuke2000/"><img class="iconImg" src="./Media/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/ecstaticstupidity"><img class="iconImg" src="./Media/github.png" alt="Github"></a>
-            <a href="https://www.facebook.com/daisuke.nishioka.104"><img class="iconImg"src="./Media/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/nishidoesinstaagain/"><img class="iconImg" src="./Media/Instagram-Icon.png" alt="Instagram"></a>
-          </div>
-          <div class="row2">
-            <a href="discordapp.com/users/119367984992092160"><img class="iconImg" src="./Media/discord.png" alt="Discord"></a><!--May need to just add discord address rather than link-->
-            <a href=""><img class="iconImg" src="./Media/phone.png" alt="Call me"></a><!--On click, show phone number and make it clickable to call-->
-            <a href=""><img class="iconImg" src="./Media/gmail.png" alt="Email"></a><!--On click, show email address-->
-            <a href=""><img class="iconImg" src="./Media/cv.png" alt="Download CV"></a><!--On click download cv-->
-          </div>
-        </div>
-      </section>
-  </main>
-  <footer>
-    <!--Hide this as some super secret thing-->
-    <p>This website was entirely developed by myself. Credit to:</p>
-    <ul>
-      <li>W3Schools for tutorials on transitions</li>
-      <li>Bootstrap for</li>
-      <li>Cai Rahman, Timothy Liao, Gavin Zau for photos</li>
-    </ul>
-  </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    </header>
+    <main>
+        <section id="top">
+					<!--Add a slideshow of images-->					
+					<div id="SLIDE_BG"></div>
+					<h1 id="welcomeText">Welcome! My name is <strong>Timothy Daisuke Chon</strong>.</h1><br>
+					<button id="aboutButton" onclick="window.location.href='#about'">About</button>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+				</section>
+        <!--Section lacks header to display-->
+				<hr>
+        <section id="about"> 
+					<h1>Who am I?</h1> <!--Perhaps unnecessary-->
+				<!--Add picture/picture gallery on left side-->
+					<div id="aboutContent">
+						<img id="aboutPic" src="./Media/23UCSD-15388691-4-1008311546-1.jpg" alt="me in a suit" >
+						<div id="aboutRight">
+							<h2 id="aboutText">Good day! I am a 23 year old Japanese-Korean American that grew up in Tokyo. I have a great passion for technology and resource management, so much so, that in fact, I got
+								 a double bachelors from the University of California, San Diego in Economics and Computer Science. However, the most important thing to know about me is that I value growth above anything else.
+								 It's why I constantly practice martial arts to create that growth in myself, and it's what I bring to any organization I become a part of. I am confident that you will find use for my drive and work ethic.
+								 When that happens, I will not try, I will contribute to creating growth in your organization.</h2><br> <!--Impactfully large and to the point. Don't forget to add link to education-->
+							<a href="Media/ResumeMar2023.pdf" download="Timothy Daisuke Chon">
+								<button id="cvDownloader">Download CV</button> <!--Look up download links later-->
+							</a>
+						</div>
+					</div>
+				</section>
+				<hr>
+				<section id="education">
+					<h1>Education</h1>
+					<!--Remember to find a good one for this <img src="" alt="me with my degrees">-->
+					<h2>University of California, San Diego - Economics B.A. </h2>
+						<ul><li>Major Upper Division GPA: 3.501</li>
+									<li>Awarded: December 2022</li>
+								</ul>
+					<h2>University of California, San Diego - Computer Science and Engineering B.S.</h2>
+						<ul><li>Major Upper Division GPA: 3.313</li>
+									<li>Awarded: December 2022</li>
+								</ul>
+					<h2>Overall GPA: 3.328</h2>
+					<div id = "educDetails">
+						<ul id="favClasses"><h2>List of favorite classes:</h2>
+							<li>Microeconomics A, B, C</li>
+							<li>Macroeconomics A, B</li>
+							<li>Econometrics A, C</li>
+							<li>Decisions Under Uncertainty</li>
+							<li>Game Theory</li>
+							<li>Industrial Organization</li>
+							<li>Advanced Data Structures</li>
+							<li>Algorithm Design and Analysis</li>
+							<li>Software Engineering</li>
+							<li>Principles of Computer Operating Systems</li>
+							<li>Intro to Computer Security</li>
+							<li>AI: Search and Reasoning</li>
+							<li>Intro to Modern Cryptography</li>
+						</ul>
+						<ul id="sigClasses"><h2>List of significant classes taken:</h2>
+							<li>Engineering Calculus A, B, C</li>
+							<li>Discrete Mathematics</li>
+							<li>Linear Algebra</li>
+							<li>Microeconomics A, B, C</li>
+							<li>Macroeconomics A, B</li>
+							<li>Econometrics A, B, C</li>
+							<li>Decisions Under Uncertainty</li>
+							<li>Game Theory</li>
+							<li>Industrial Organization</li>
+							<li>Advanced Data Structures</li>
+							<li>Theory of Computation</li>
+							<li>Algorithm Design and Analysis</li>
+							<li>Software Engineering</li>
+							<li>Web Client Languages</li>
+							<li>Intro to Computer Architecture</li>
+							<li>Principles of Computer Operating Systems</li>
+							<li>Programming Languages: Principles and Paradigms</li>
+							<li>Intro to Computer Security</li>
+							<li>Interaction Design</li>
+							<li>AI: Search and Reasoning</li>
+							<li>Intro to Modern Cryptography</li>
+							<li>Recommender Systems and Web Mining</li>
+						</ul>
+						
+						<img id="gownpic" src="./Media/23UCSD-15388691-22-1008311448-1.jpg" alt = "me in a gown" width="600px">
+					</div>
+				</section>
+				<hr>
+				<section id="projects">
+					<h1>Projects</h1>
+					<img id="bujoStudioImg" src="Media/homepage.png">
+					<h2>Bujo Studio</h2>
+					<p>For my software engineering course, I was tasked to work with a group of other students to develop a bullet journal web application in a quarter.
+						I was appointed to be the leader of a group of eight students and used Agile development techniques in order to complete the project.
+						We were a smaller group than the norm, some members had personal emergencies come up that prevented them from working, and I (as well as a few other members) had no experience in web app development at the time so naturally, the instruction staff did not expect us to submit a relatively finished product.
+						However, we made many sacrifices, learned web app development on the fly, and ultimately prevailed to release a working version. We all received an A for our work.
+						For this project, while I oversaw the overall development of the app, I focused my efforts into developing the front end workings of the app as my team had several members who had experience with backend development.
+						I also put in the majority of the work in connecting data entered into the front-end to be stored in the backend so it could be accessed again.
+					</p>
+					<h3><a href="https://github.com/cse110-sp21-group9/cse110-sp21-group9">Check out the project here</a></h3>
+					<h2>3BC Processor</h2>
+					<p>For my computer architecture course, I worked with two other students to develop a custom processor that specialized in certain error correction tasks from scratch.
+						The program was supposed to be able to perform a Hamming encoding with additional credit given to performing a SECDED decoding as well as pattern matching capabilities, all while under constraints outlined in the documentation.
+						We designed the Instruction Set, created an ALU model in Verilog, and had the processor perform the tasks using the appropriate assembly code structured to the Instruction Set. The project performed the first task without issue but the others still had some bugs in it when we submitted it.
+						We received a B+ for our efforts.
+					</p>
+					<h3><a href="https://github.com/ecstaticstupidity/CSE-141L-Project">Check out the project here</a></h3>
+					<h2>Japanese beer analysis</h2>
+					<p>For my Industrial Organization course, I was tasked to conduct an exploration based on a dataset of beer and apply concepts learned in the class to speculate on how competition is present in the industry.
+						Since I was living in Japan at the time due to the Coronavirus pandemic, I asked Dr. Emannuel Vespa, the lead instructor if I could use data I collected from my local supermarket to conduct the exploration and see if I can find the same phenomena he described seeing in the American beer market.
+						I was given the green light for this project and found that just like the American beer industry, competition is done in advertisement rather than prices, alcohol content, or other types of branding that I observed in my data collection.
+						I received an A for my work.
+					</p>
+					<h3><a href="Media/ECON_105_Empirical_Assignment.pdf" download="Beer Analysis">Download the paper here</a></h3>
+					<h2>First Annual UCSD Kendo Club Tournament</h2>
+					<p>As president of the UCSD Kendo Club, my main goal during my term was to secure a strong renewal to the club's vitality following a severe stagnation in membership, functions, and participation from the COVID pandemic.
+						Me and my management board that I had appointed agreed that one of the main pillars of achieving this goal was to organize the club's first tournament in its 25 year history. We communicated with UCSD administration to get permission to host the event,
+						invited instructors all over San Diego to judge, and rallied UCSD Kendo Club members to participate, among a giant list of other things to provide an overall successful tournament experience.
+						Of course, since this was the first tournament the club had ever organized, there were a few mishaps along the way so we later got together to write up a list of guidelines on what worked and what didn't. To this day, the UCSD Kendo Club hosts this tournament annually
+						every fall with each year improving on the last. To this day, it is one of the projects I am most proud of contributing to.
+					</p>
+				</section>
+				<hr>
+				<section id="achievements">
+					<h1>Achievements</h1>
+					<h2>Martial Arts</h2>
+					<p>Traditional Japanese Martial Arts has been, and will continue to be core to my development and identity.
+						From getting thrown around on the mats in my childhood, to helping my Sensei teach Aikido in my adolescence,
+						all the way to leading the Kendo and Iaido Clubs at UC San Diego, I have always made time to develop as a martial artist and as a person.
+						Though the achievements I have gained are nice reminders of my growth, I value far more the discipline, perseverance, and drive I have built from
+						consistent and constant practice.
+					</p>
+					<img id="shodanAikido" src="Media/aikidoShodan.jpg">
+					<h2>All-Japan Aikido Federation - 1st Degree Black Belt</h2>
+						<ul>
+							<li>Awarded: April 2018</li>
+						</ul>
+					<h2>Southern California Kendo Federation - 3rd Kyu Rank</h2>
+						<ul><li>Awarded: April 2022</li></ul>
+					<h2>Mazuru Kai Iaido Dojo - 5th Kyu Rank</h2>
+						<ul><li>Awarded: May 2022</li></ul>
+					<h2>2021 UCSD Kendo Tournament - 1st Place Advanced Division</h2>
+						<ul><li>My team organized the UCSD Kendo Club's first Kendo tournament in its 25 year history. We had a pretty good showing of 30 or so members and I ended up winning.</li>
+								<li>Awarded: November 2021</li>
+						</ul>
+					<h2>2022 San Diego Kendo-Bu Tournament - 2nd Place Yamamoto Cup</h2>
+						<ul>
+							<li>This is an annual Kendo tournament that the San Diego Kendo-Bu Dojo holds for all its members in memory of the late John K. Yamamoto Sensei.</li>
+							<li>Awarded: March 2022</li>
+						</ul>
+						<img id="yuhihaiVictory" src="Media/PXL_20220502_011726925.MP.jpg">
+					<h2>2022 UCLA Yuhihai Tournament - 2nd Place Kyu Teams Division</h2>
+						<ul>
+							<li>This is a prestigious Kendo tournament that UCLA hosts annually for all Kendo practictitioners in the UC schools to compete in.</li>
+							<li>Awarded: April 2022</li>
+					</ul>
+					<h2>UCSD Kendo Club President</h2>
+						<ul>
+							<li>Founded in 1998 by UCSD alumni and San Diego Kendo-Bu Dojo instructors, this club works to organize regular practices and introduce the students of UCSD to the popular Japanese martial art of Kendo. 
+								Kendo is a centuries old Japanese sword-based martial art practiced by millions of people from children to the elderly.
+							</li>
+							<li>Progressed from Secretary to Vice President to President over the four years I spent as a member of the club.</li>
+							<li>With a management board of 10 other members, we: 
+								<ul>
+									<li>Expanded the club from 15 regular members to 80 following a severe stagnation from the COVID pandemic</li>
+									<li>Taught proper etiquette when practicing in a dojo environment as well as lead warmups so members could practice without injuring themselves</li>
+									<li>Organized the club's first tournament in its 30 year history</li>
+									<li>Worked with other orgs on UCSD to organize demonstrations of Kendo and our club.</li>
+									<li>Organized several team-building events and socials to build a tightly knit community</li>
+									<li>Worked with martial arts supply vendors to supply members with the necessary practice equipment at lower costs in order to reduce barriers of entry</li>
+									<li>Designed and sold club merchandise such as jackets and t-shirts to build a sense of unity within the club</li>
+									<img id="iaidoBadass" src="Media/IMG_20211018_022458_069.jpg">
+									<li>Organized fund raisers to subsidize tournament participation fees in order to further reduce said barriers of entries for members.</li>
+									<li>Extensively mentored many fellow students in not only the martial art but also in schoolwork and life in general.</li>
+								</ul>
+							</li>
+							<li>Term: June 2021 - June 2022</li>
+						</ul>
+					<h2>UCSD Iaido Club President</h2>
+						<ul>
+							<li>Lesser widespread than Kendo, Iaido is also a centuries-old Japanese sword art. Compared to Kendo, an emphasis is placed on 
+								constant repetition of certain drills as well as draws from the sheath.
+							</li>
+							<li>Starting as the only manager and member of the club, I:
+								<ul>
+									<li>Expanded the club from just myself to 15 regular members. The club was on the verge of completely disappearing following the COVID pandemic.</li>
+									<li>Recruited 3 members to found a managerial board</li>
+									<li>Organized fund raisers to subsidize practice equipment costs for new members.</li>
+									<li>Created guidelines of best management practices that I learned from leading the larger Kendo club.</li>
+								</ul>
+							</li>
+							<li>Term: June 2020 - June 2022</li>
+						</ul>
+				</section>
+				<hr>
+        <section id="contact">
+					<h1>Contact Me</h1>
+					<!--These should be icons-->
+					<div id="icons">
+						<div class="row">
+							<a href="https://www.linkedin.com/in/nishi-daisuke2000/"><img class="iconImg" src="./Media/linkedin.png" alt="LinkedIn"></a>
+							<a href="https://github.com/ecstaticstupidity"><img class="iconImg" src="./Media/github.png" alt="Github"></a>
+							<div class="tooltip">
+								<img class="iconImg" id="emailIcon" src="./Media/gmail.png" alt="Email" onclick="emailCopy()" onmouseout="emailOut()"><!--On click, show email address-->
+									<span class="tooltiptext" id="emailToolTip" lang="en">Copy tchon@ucsd.edu to clipboard</span>
+							</div>
+						</div>
+						<div class="row2">
+							<div class="tooltip">
+								<img class="iconImg" src="./Media/phone.png" alt="Call me" onmouseout="phoneOut()"><!--On click, show phone number and make it clickable to call-->
+									<span class="tooltiptext" id="phoneToolTip">+1-858-752-2709</span>
+							</div>
+							<a href="Media/ResumeMar2023.pdf" download="Timothy Daisuke Chon"><img class="iconImg" src="./Media/cv.png" alt="Download CV"></a><!--On click download cv-->
+						</div>
+					</div>
+        </section>
+    </main>
+		<footer>
+			<!--Hide this as some super secret thing-->
+			<details>
+				<summary>Super Secret Button</summary>
+				<p>This website was entirely developed by myself. Credit to:</p>
+				<ul>
+					<li>W3Schools for tutorials on transitions and tooltips</li>
+					<li>Bootstrap for</li>
+					<li>Cai Rahman, Timothy Liao, Gavin Zau for photos</li>
+				</ul>
+			</details>
+    </footer>
+</body>
 </html>
