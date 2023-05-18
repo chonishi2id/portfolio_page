@@ -1,4 +1,17 @@
-# Personal Website Project Version 1.2
+# Personal Website Project Version 1.2.1
+## Version 1.2.1 May 19, 2023
+### Patches Implemented
+* Took out search bar on navbar and replaced with dropdown language menu
+* Fixed images and header text not resizing on ctrl + scroll
+
+### To do
+* Navbar mods - make it so on click, the page scrolls at the right section. Currently scrolls where title is slightly covered.
+* Add in skills - maybe under achievements?
+* Add in work experience - maybe under education?
+* Add in UCSD Kendo Tournament pictures under projects - maybe a carousel using BS
+* Custom URL and maybe find a site icon
+* Connect EN and JP pages using dropdown language menu
+
 ## Version 1.2 May 18, 2023
 ### Completed Ideas
 * More robust navbar implemented using Bootstrap
