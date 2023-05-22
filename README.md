@@ -1,4 +1,15 @@
-# Personal Website Project Version 1.2.1
+# Personal Website Project Version 1.3
+## Version 1.3 May 22, 2023
+### Completed Ideas
+* Japanese page is launched. It is accessible through the navbar
+* Added in academic and debate achievements
+
+### To do
+* Navbar mods - make it so on click, the page scrolls at the right section. Currently scrolls where title is slightly covered.
+* Add in list of skills and work experience under education
+* Add in UCSD Kendo Tournament pictures under projects - maybe a carousel using BS
+* Custom URL and maybe find a site icon
+
 ## Version 1.2.1 May 19, 2023
 ### Patches Implemented
 * Took out search bar on navbar and replaced with dropdown language menu
