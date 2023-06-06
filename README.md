@@ -1,4 +1,17 @@
-# Personal Website Project Version 1.3
+# Personal Website Project Version 1.4
+## Version 1.4 June 6, 2023
+### Completed Ideas
+* Changed Projects section to be more visually appealing
+    * Changed list format to cards and modals
+* Configured Firebase to do analytics properly
+* Added in skills under education
+
+### To do
+* Add in work experience?
+* Add in UCSD Kendo Tournament pictures under projects - maybe a carousel using BS
+* Custom URL and maybe find a site icon
+
+
 ## Version 1.3 May 22, 2023
 ### Completed Ideas
 * Japanese page is launched. It is accessible through the navbar
