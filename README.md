@@ -1,4 +1,7 @@
 # Personal Website Project Version 1.4
+## Version 1.5 October 5, 2023
+* Added two new projects under projects section
+  * A matching engine project and the project for this website
 ## Version 1.4 June 6, 2023
 ### Completed Ideas
 * Changed Projects section to be more visually appealing
